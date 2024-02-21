@@ -1,0 +1,15 @@
+<h2>Data Binding exemples</h2>
+<h3>{{Msg}}</h3>
+<br>
+<img [src]="path" alt="logo">
+<button (click)="changeMe()">Change Image</button>
+<br>
+
+Enter New message: <input type="text" [(ngModel)]="Msg">
+
+<div *ngFor="let e of tab, let i=index, let isOdd=odd, let isEven=even">
+    {{e}} 
+    <h2 *ngIf="isOdd">pair</h2>
+    <h2 *ngIf="isEven">Impair</h2>
+</div>
+

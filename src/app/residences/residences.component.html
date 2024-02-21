@@ -1,0 +1,9 @@
+<h2>Residencs List</h2>
+<ul>
+    <li *ngFor="let residence of listResidences">
+        {{ residence.name }} <button [routerLink]="['details',residence.name]">Show Details</button>
+    </li> 
+
+</ul>
+
+<router-outlet></router-outlet>
